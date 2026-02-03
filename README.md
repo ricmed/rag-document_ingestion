@@ -142,7 +142,6 @@ O módulo `src/ingestion/audio_transcription.py` oferece:
 ```
 rag-document_ingestion/
 ├─ config/              # chunking.json
-├─ configs/             # configs adicionais (placeholder)
 ├─ docs/
 ├─ scripts/
 ├─ src/
