@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import os
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Dict
@@ -43,7 +44,7 @@ def load_config(config_path: Path | None = None) -> AppConfig:
     if dotenv_path.exists():
         load_dotenv(dotenv_path=dotenv_path)
         for env_key, config_key in ENV_MAPPING.items():
-            env_value = typer.get_env(env_key)
+            env_value = os.getenv(env_key)
             if env_value is None:
                 continue
             if config_key == "search_top_k":
