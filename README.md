@@ -46,6 +46,8 @@ nvidia-smi
 ```
 
 > Observação: bibliotecas específicas (ex.: PyTorch, FAISS, Whisper) precisam da versão correta para CUDA.
+>
+> **Fallback CPU:** se não tiver GPU/CUDA, instale o PyTorch padrão (sem `--index-url` do CUDA) ou remova as linhas de `torch/torchvision` específicas de CUDA do `requirements.txt`. Isso fará o download das wheels CPU via PyPI.
 
 ## Instalação
 
