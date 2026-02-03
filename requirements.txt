@@ -1,3 +1,13 @@
+--index-url https://download.pytorch.org/whl/cu128
+torch
+torchvision
+
+docling
+qdrant-client
+weaviate-client
+neo4j
+rich
+typer
 typer[all]
 rich
 python-dotenv
