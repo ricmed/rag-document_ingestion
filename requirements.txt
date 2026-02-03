@@ -8,3 +8,7 @@ weaviate-client
 neo4j
 rich
 typer
+typer[all]
+rich
+python-dotenv
+pyyaml
