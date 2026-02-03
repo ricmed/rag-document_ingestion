@@ -1,0 +1,5 @@
+{
+  "max_tokens": 256,
+  "late_chunking": true,
+  "include_title_in_chunks": true
+}
